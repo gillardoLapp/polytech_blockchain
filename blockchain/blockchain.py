@@ -1,6 +1,6 @@
 
-from .block import Block
-from .transaction import Transaction  
+from blockchain.block import Block
+from blockchain.transaction import Transaction  
 
 class Blockchain:
     def __init__(self):

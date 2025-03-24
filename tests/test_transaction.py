@@ -2,7 +2,7 @@
 import unittest
 import ecdsa
 from blockchain.transaction import Transaction
-from blockchain.wallet import generate_keys
+from blockchain.util import generate_keys
 
 class TestTransaction(unittest.TestCase):
     def test_transaction_signature(self):

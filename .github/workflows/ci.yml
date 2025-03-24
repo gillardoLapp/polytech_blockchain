@@ -22,5 +22,5 @@ jobs:
         pip install ecdsa
 
     - name: Run tests
-      run: python -m unittest discover -s . -p "*.py"
+      run: python -m unittest discover -s tests -p "*.py"
     
