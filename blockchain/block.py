@@ -19,7 +19,7 @@ class Block:
         return 
 
     def __str__(self):
-        transactions_str = '\n  '.join(str(tx) for tx in self.data)
-        return (f"Block #{self.index} [Previous Hash: {self.previous_hash}, "
+        transactions_str = ''.join(str(tx) for tx in self.data)
+        return (f"\n Block #{self.index} [Previous Hash: {self.previous_hash}, "
                 f"Hash: {self.hash}, Transactions:\n  {transactions_str}, "
                 f"Timestamp: {self.timestamp}, Nonce: {self.nonce}]")

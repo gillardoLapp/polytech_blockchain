@@ -6,7 +6,8 @@ class Blockchain:
     def __init__(self):
         self.chain = [self.create_genesis_block()]
         self.pending_transactions = []
-        self.mining_reward = 10  # Reward per mined block
+        ## todo : define Reward per mined block
+        
 
     def create_genesis_block(self):
         return Block(0, "0", "Genesis Block")
@@ -26,7 +27,7 @@ class Blockchain:
         self.chain.append(new_block)
 
     def mine_pending_transactions(self, miner_public_key):
-        self.pending_transactions += [Transaction(None, miner_public_key, self.mining_reward)]
+        ## todo : add the reward for the miner
         new_block = Block(len(self.chain), self.chain[-1].hash, self.pending_transactions)
         self.chain.append(new_block)
 
